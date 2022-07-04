@@ -71,7 +71,7 @@ if __name__ == "__main__":
     result = convert_to_morse(text)
     print(result) """
 
-# List Comprehensions
+""" # List Comprehensions
 a = [i**2 for i in range(8)]
 
 even_nums = [x for x in range(21) if x % 2 == 0]  # запис еквівалентний =>
@@ -84,7 +84,7 @@ for x in range(21):
 names = ['Steve', 'Bill', 'Ram', 'Mohan', 'Abdul']
 names2 = [s for s in names if 'a' in s]
 
-nums = [x for x in range(21) if x % 2 == 0 if x % 5 == 0]
+nums = [x for x in range(21) if x % 2 == 0 if x % 5 == 0] """
 
 """ # if-elif-else condition
 l = [1, 2, 3, 4, 5]
@@ -123,3 +123,10 @@ new_set_1 = {element*3 for element in my_list if element % 2 ==0}
 # Створюємо новий список в якому будуть числа які кратні 30 АБО 35
 a = [i for i in range(30, 250) if i % 30 == 0 or i % 35 == 0]    
  """
+import random
+list_set = set([random.randint(1,100) for i in range (20)])
+#print(list_set)
+set_list = [item for item in list_set]
+print(set_list, len(set_list))
+list_dict = {item : random.randint(1,100) for item in set_list}
+print(list_dict, len(list_dict))
